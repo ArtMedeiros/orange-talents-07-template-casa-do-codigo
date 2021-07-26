@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.zupacademy.kleysson</groupId>
 	<artifactId>casa-do-codigo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<name>casa-do-codigo</name>
 	<description>Implementando o desafio da Casa do Código</description>
 	<properties>
@@ -20,6 +20,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
