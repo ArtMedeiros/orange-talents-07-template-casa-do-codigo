@@ -1,6 +1,6 @@
 package br.com.zupacademy.kleysson.casadocodigo.dto;
 
-import br.com.zupacademy.kleysson.casadocodigo.config.validation.AutorEmailUnique;
+import br.com.zupacademy.kleysson.casadocodigo.config.validation.UniqueColumn;
 import br.com.zupacademy.kleysson.casadocodigo.model.Autor;
 import org.hibernate.validator.constraints.Length;
 
@@ -14,7 +14,7 @@ public class AutorRequest {
     private String nome;
 
     @Email
-    @AutorEmailUnique
+    @UniqueColumn(field = "email", entity = Autor.class)
     private String email;
 
     @NotBlank

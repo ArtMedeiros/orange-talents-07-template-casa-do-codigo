@@ -1,7 +1,6 @@
 package br.com.zupacademy.kleysson.casadocodigo.controller;
 
-import br.com.zupacademy.kleysson.casadocodigo.dto.CategoriaRequestResponse;
-import br.com.zupacademy.kleysson.casadocodigo.model.Categoria;
+import br.com.zupacademy.kleysson.casadocodigo.dto.CategoriaRequest;
 import br.com.zupacademy.kleysson.casadocodigo.repository.CategoriaRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +21,7 @@ public class CategoriaController {
     }
 
     @PostMapping
-    public ResponseEntity<CategoriaRequestResponse> cadastrar(@RequestBody @Valid CategoriaRequestResponse categoria){
+    public ResponseEntity<CategoriaRequest> cadastrar(@RequestBody @Valid CategoriaRequest categoria){
         categoriaRepository.save(categoria.converter());
 
         return ResponseEntity.ok().build();

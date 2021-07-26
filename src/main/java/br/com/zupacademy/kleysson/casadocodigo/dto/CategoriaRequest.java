@@ -1,14 +1,14 @@
 package br.com.zupacademy.kleysson.casadocodigo.dto;
 
-import br.com.zupacademy.kleysson.casadocodigo.config.validation.CategoriaUnique;
+import br.com.zupacademy.kleysson.casadocodigo.config.validation.UniqueColumn;
 import br.com.zupacademy.kleysson.casadocodigo.model.Categoria;
 
 import javax.validation.constraints.NotBlank;
 
-public class CategoriaRequestResponse {
+public class CategoriaRequest {
 
     @NotBlank
-    @CategoriaUnique
+    @UniqueColumn(field = "nome", entity = Categoria.class)
     private String nome;
 
     public String getNome() {

@@ -7,11 +7,15 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Constraint(validatedBy = AutorEmailUniqueValidator.class)
-@Target({ElementType.METHOD, ElementType.FIELD})
+@Constraint(validatedBy = UniqueColumnValidator.class)
+@Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface AutorEmailUnique {
-    String message() default "Email já cadastrado";
+public @interface UniqueColumn {
+    String message() default "Campo duplicado";
+
+    String field();
+    Class<?> entity();
+
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
