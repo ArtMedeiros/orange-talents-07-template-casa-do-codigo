@@ -1,6 +1,6 @@
 package br.com.zupacademy.kleysson.casadocodigo.controller;
 
-import br.com.zupacademy.kleysson.casadocodigo.dto.AutorDTO;
+import br.com.zupacademy.kleysson.casadocodigo.dto.AutorResponse;
 import br.com.zupacademy.kleysson.casadocodigo.dto.AutorRequest;
 import br.com.zupacademy.kleysson.casadocodigo.model.Autor;
 import br.com.zupacademy.kleysson.casadocodigo.repository.AutorRepository;
@@ -23,7 +23,7 @@ public class AutorController {
     }
 
     @PostMapping
-    public ResponseEntity<AutorDTO> cadastrar(@RequestBody @Valid AutorRequest autorForm) {
+    public ResponseEntity<AutorResponse> cadastrar(@RequestBody @Valid AutorRequest autorForm) {
         Autor autor = autorForm.converter();
         autorRepository.save(autor);
 

@@ -2,7 +2,7 @@ package br.com.zupacademy.kleysson.casadocodigo.dto;
 
 import java.time.LocalDateTime;
 
-public class AutorDTO {
+public class AutorResponse {
 
     private long id;
     private String nome;
