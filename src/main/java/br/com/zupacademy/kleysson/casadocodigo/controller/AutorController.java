@@ -1,7 +1,7 @@
 package br.com.zupacademy.kleysson.casadocodigo.controller;
 
-import br.com.zupacademy.kleysson.casadocodigo.dto.AutorResponse;
-import br.com.zupacademy.kleysson.casadocodigo.dto.AutorRequest;
+import br.com.zupacademy.kleysson.casadocodigo.dto.response.AutorResponse;
+import br.com.zupacademy.kleysson.casadocodigo.dto.request.AutorRequest;
 import br.com.zupacademy.kleysson.casadocodigo.model.Autor;
 import br.com.zupacademy.kleysson.casadocodigo.repository.AutorRepository;
 import org.springframework.http.ResponseEntity;

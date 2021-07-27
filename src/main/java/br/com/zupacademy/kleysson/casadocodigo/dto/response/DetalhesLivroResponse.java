@@ -1,4 +1,4 @@
-package br.com.zupacademy.kleysson.casadocodigo.dto;
+package br.com.zupacademy.kleysson.casadocodigo.dto.response;
 
 import br.com.zupacademy.kleysson.casadocodigo.model.Livro;
 

@@ -1,8 +1,8 @@
 package br.com.zupacademy.kleysson.casadocodigo.controller;
 
-import br.com.zupacademy.kleysson.casadocodigo.dto.DetalhesLivroResponse;
-import br.com.zupacademy.kleysson.casadocodigo.dto.LivroRequest;
-import br.com.zupacademy.kleysson.casadocodigo.dto.LivroResponse;
+import br.com.zupacademy.kleysson.casadocodigo.dto.response.DetalhesLivroResponse;
+import br.com.zupacademy.kleysson.casadocodigo.dto.request.LivroRequest;
+import br.com.zupacademy.kleysson.casadocodigo.dto.response.LivroResponse;
 import br.com.zupacademy.kleysson.casadocodigo.model.Livro;
 import br.com.zupacademy.kleysson.casadocodigo.repository.AutorRepository;
 import br.com.zupacademy.kleysson.casadocodigo.repository.CategoriaRepository;

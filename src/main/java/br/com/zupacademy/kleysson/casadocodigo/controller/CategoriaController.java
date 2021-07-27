@@ -1,6 +1,6 @@
 package br.com.zupacademy.kleysson.casadocodigo.controller;
 
-import br.com.zupacademy.kleysson.casadocodigo.dto.CategoriaRequest;
+import br.com.zupacademy.kleysson.casadocodigo.dto.request.CategoriaRequest;
 import br.com.zupacademy.kleysson.casadocodigo.repository.CategoriaRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

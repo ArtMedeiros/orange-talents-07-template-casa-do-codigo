@@ -1,4 +1,4 @@
-package br.com.zupacademy.kleysson.casadocodigo.dto;
+package br.com.zupacademy.kleysson.casadocodigo.dto.request;
 
 import br.com.zupacademy.kleysson.casadocodigo.config.validation.UniqueColumn;
 import br.com.zupacademy.kleysson.casadocodigo.model.Categoria;

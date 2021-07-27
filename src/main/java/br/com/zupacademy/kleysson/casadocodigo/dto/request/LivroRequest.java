@@ -1,4 +1,4 @@
-package br.com.zupacademy.kleysson.casadocodigo.dto;
+package br.com.zupacademy.kleysson.casadocodigo.dto.request;
 
 import br.com.zupacademy.kleysson.casadocodigo.config.validation.ObjectExists;
 import br.com.zupacademy.kleysson.casadocodigo.config.validation.UniqueColumn;
