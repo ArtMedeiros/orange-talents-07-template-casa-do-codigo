@@ -1,16 +1,17 @@
 package br.com.zupacademy.kleysson.casadocodigo.dto;
 
+import br.com.zupacademy.kleysson.casadocodigo.model.Autor;
+
 import java.time.LocalDateTime;
 
 public class AutorResponse {
 
-    private long id;
     private String nome;
     private String descricao;
-    private LocalDateTime instante;
 
-    public long getId() {
-        return id;
+    public AutorResponse(Autor autor) {
+        this.nome = autor.getNome();
+        this.descricao = autor.getDescricao();
     }
 
     public String getNome() {
@@ -19,9 +20,5 @@ public class AutorResponse {
 
     public String getDescricao() {
         return descricao;
-    }
-
-    public LocalDateTime getInstante() {
-        return instante;
     }
 }

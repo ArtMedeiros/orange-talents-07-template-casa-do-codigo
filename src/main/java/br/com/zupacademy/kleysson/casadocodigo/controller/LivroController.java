@@ -1,5 +1,6 @@
 package br.com.zupacademy.kleysson.casadocodigo.controller;
 
+import br.com.zupacademy.kleysson.casadocodigo.dto.DetalhesLivroResponse;
 import br.com.zupacademy.kleysson.casadocodigo.dto.LivroRequest;
 import br.com.zupacademy.kleysson.casadocodigo.dto.LivroResponse;
 import br.com.zupacademy.kleysson.casadocodigo.model.Livro;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/livro")
@@ -38,5 +40,16 @@ public class LivroController {
         Iterable<Livro> listaLivros = livroRepository.findAll();
 
         return LivroResponse.converterLista(listaLivros);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<DetalhesLivroResponse> detalhesLivro(@PathVariable Long id) {
+        Optional<Livro> livro = livroRepository.findById(id);
+
+        if(livro.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+
+        return ResponseEntity.ok(new DetalhesLivroResponse(livro.get()));
     }
 }

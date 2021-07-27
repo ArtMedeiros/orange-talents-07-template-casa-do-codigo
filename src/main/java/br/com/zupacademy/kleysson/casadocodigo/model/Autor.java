@@ -39,4 +39,12 @@ public class Autor {
         this.descricao = descricao;
         this.instante = instante;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }
